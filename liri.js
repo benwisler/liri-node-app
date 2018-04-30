@@ -54,7 +54,7 @@ function displayMovie() {
             if (movieInfo.Ratings[1]) {
             console.log("Tomatometer: " + movieInfo.Ratings[1].Value)
             }
-            else {return console.log("Tomatometer: No Rating Available")}
+            else if (!movieInfo.Ratings[1]){console.log("Tomatometer: No Rating Available")}
             console.log("Country: " + movieInfo.Country);
             console.log("Language(s): " + movieInfo.Language);
             console.log("Plot: " + movieInfo.Plot);
